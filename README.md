@@ -11,11 +11,10 @@ I created 2 branches(feature-A & feature-B) and made changes to the same file. W
 
 
 ```
-<<<<<<< HEAD
-Hello from Feature A
-=======
-Hello from Feature B
->>>>>>> feature-B 
+Auto-merging code.txt
+CONFLICT (add/add): Merge conflict in code.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
 ```
 
 
