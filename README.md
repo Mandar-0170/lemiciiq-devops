@@ -7,8 +7,9 @@
 
 
 ## Git Merge conflict example:
-
 I created 2 branches(feature-A & feature-B) and made changes to the same file. When merging, git gave a following conflict:
+
+
 <<<<<<< HEAD
 Hello from Feature A
 =======
