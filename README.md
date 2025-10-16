@@ -7,13 +7,15 @@
 
 
 ## Git Merge conflict example:
-
 I created 2 branches(feature-A & feature-B) and made changes to the same file. When merging, git gave a following conflict:
-<<<<<<< HEAD
-Hello from Feature A
-=======
-Hello from Feature B
->>>>>>> feature-B
+
+
+```
+Auto-merging code.txt
+CONFLICT (add/add): Merge conflict in code.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+```
 
 
 In order to perform this conflict I manually edited the file to keep both the changes:
