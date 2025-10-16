@@ -1,1 +1,2 @@
-Hello from feature-A
+
+Hello from feature-A & feature B
