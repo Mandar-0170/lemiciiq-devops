@@ -1,5 +1,7 @@
 # LemiciIQ DevOps Exercise
 
+#Part 1 : Version Control (Git & SSH):
+
 ## Difference between git pull vs git fetch:
 
 - git fetch: It downloads changes from remote repository but does not merge them automatically.  
@@ -22,3 +24,8 @@ In order to perform this conflict I manually edited the file to keep both the ch
 "Hello from Feature-A and Feature-B"
 and added the file to repository
 
+
+#Part 2: Docker & Containerization: 
+
+## Difference between Dockerfile, Docker Image & Docker Container:
+	
