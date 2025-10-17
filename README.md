@@ -55,6 +55,13 @@ We use Elastic Kuberentes Service to avoid the operational complexity of managin
 
 
 ## Part-4: CI-CD Pipeline:
-## 2. 
+## 2. Explain how this pipeline would change if we wanted to deploy to Kubernetes after building:
+- After building and pushing the Docker image in Jenkins, we can add an additional stage such as:
+- Deployment Stage:
+```
+sh 'kubectl set image deployment/my-app my-container=portfloio-image:latest'
+sh 'kubectl apply -f k8s-deployment.yaml'
+```
+
 
 
