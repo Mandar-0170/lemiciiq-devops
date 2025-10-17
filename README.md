@@ -28,4 +28,8 @@ and added the file to repository
 ## Part 2: Docker & Containerization: 
 
 ## Difference between Dockerfile, Docker Image & Docker Container:
-	
+
+- Dockerfile: This file contains step by step instructions/commands to build our application.
+- Docker Image: It is portable package that contains our application, created using dockerfile.
+- Docker Container: It is a running instance of our application. Docker containers are lightweight, ephimeral and portable in nature.
+
