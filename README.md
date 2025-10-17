@@ -33,3 +33,7 @@ and added the file to repository
 - Docker Image: It is portable package that contains our application, created using dockerfile.
 - Docker Container: It is a running instance of our application. Docker containers are lightweight, ephimeral and portable in nature.
 
+## How you would reduce the image size if your first build is too large:
+1. We can use smaller and lighter base images like alpine, python-slim.
+2. We can optimize layers in docker image by executing multiple commands in a single command.
+3. We can avoid copying unnecessary files into docker by mentioning those file in .dockerignore file.
