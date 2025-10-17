@@ -39,4 +39,4 @@ and added the file to repository
 3. We can avoid copying unnecessary files into docker by mentioning those file in .dockerignore file.
 
 ## 3. Application Container:
-![Container Stats](../images/Screenshot 2025-10-17 225357.png)
+![Container Stats](./images/docker.png)
