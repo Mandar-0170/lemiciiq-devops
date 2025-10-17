@@ -1,6 +1,6 @@
 # LemiciIQ DevOps Exercise
 
-#Part 1 : Version Control (Git & SSH):
+##-Part 1 : Version Control (Git & SSH):
 
 ## Difference between git pull vs git fetch:
 
@@ -25,7 +25,7 @@ In order to perform this conflict I manually edited the file to keep both the ch
 and added the file to repository
 
 
-#Part 2: Docker & Containerization: 
+##-Part 2: Docker & Containerization: 
 
 ## Difference between Dockerfile, Docker Image & Docker Container:
 	
