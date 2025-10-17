@@ -54,3 +54,7 @@ and added the file to repository
 We use Elastic Kuberentes Service to avoid the operational complexity of managing Kubernetes by ourselves on VMs. EKS handles the control plane, scaling, upgrades, security that allows teams to focus on applications rather than cluster maintenance.
 
 
+## Part-4: CI-CD Pipeline:
+## 2. 
+
+
