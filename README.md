@@ -1,6 +1,6 @@
 # LemiciIQ DevOps Exercise
 
-## - Part 1 : Version Control (Git & SSH):
+## Part 1 : Version Control (Git & SSH):
 
 ## Difference between git pull vs git fetch:
 
