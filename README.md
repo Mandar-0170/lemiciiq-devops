@@ -95,3 +95,24 @@ kubectl exec -it <pod-name> -- /bin/sh
 ```
 Allows to access pods using interactice shell.
 
+## 3. What tools would you suggest for monitoring in AWS EKS and why?:
+- AWS Cloudwatch:
+  1. It directly collects metrics and logs from EKS, EC2, RDS, ELB, Lambda, etc. No extra agents required for AWS services.
+  2. Combines metrics, logs, and alarms in one platform. Can trigger SNS alerts, Auto Scaling, or Lambda actions based on thresholds.
+  3. Pay-as-you-go. Eliminates the burden of managing third-party monitoring.
+
+# Part-6: Problem Solving Scenario:
+## Setting up new microservice in AWS EKS:
+1. Source Code & Repository Setup:
+- Ensure the application code is in GitHub and set up branching strategy.
+2. Containerization:
+- Write a Dockerfile to containerize the application. Build and test the container locally.
+- Push the image to dockerhub.
+3. CI/CD Pipeline:
+  - Pull code from GitHub.
+- Build Docker image.
+- Run unit tests.
+- Push image to Dockerhub.
+- Update Kubernetes manifests with new image tag.
+- Deploy using: kubectl apply -f deployment.yaml
+    
