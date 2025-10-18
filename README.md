@@ -4,8 +4,9 @@
 
 ## 1. Difference between git pull vs git fetch:
 
-- git fetch: It downloads changes from remote repository but does not merge them automatically.  
 - git pull: It downloads and merges changes from the remote repository into your branch.
+- git fetch: It downloads changes from remote repository but does not merge them automatically.  
+
 
 
 ## 2. Git Merge conflict example:
