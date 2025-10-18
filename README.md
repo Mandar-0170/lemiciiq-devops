@@ -1,6 +1,6 @@
 # LemiciIQ DevOps Exercise
 
-## Part-1 : Version Control (Git & SSH):
+# Part-1 : Version Control (Git & SSH):
 
 ## 1. Difference between git pull vs git fetch:
 
@@ -25,7 +25,7 @@ In order to perform this conflict I manually edited the file to keep both the ch
 and added the file to repository
 
 
-## Part-2: Docker & Containerization: 
+# Part-2: Docker & Containerization: 
 
 ## 1. Difference between Dockerfile, Docker Image & Docker Container:
 
@@ -41,7 +41,7 @@ and added the file to repository
 ## 3. Application Container:
 ![Container Stats](./images/docker.png)
 
-## Part-3: Kubernetes: 
+# Part-3: Kubernetes: 
 ## 1. Difference between Pods, Deployment, Service: 
 - Pods: Pods are the smallest deployable units that runs containerized application inside a Kuberenetes cluster.
 - Deployment: Deployment is a high level Kubernetes api object that manages pods. It ensures that the desired numbers of pods are always running and provides autoscaling.
@@ -54,7 +54,7 @@ and added the file to repository
 We use Elastic Kuberentes Service to avoid the operational complexity of managing Kubernetes by ourselves on VMs. EKS handles the control plane, scaling, upgrades, security that allows teams to focus on applications rather than cluster maintenance.
 
 
-## Part-4: CI-CD Pipeline:
+# Part-4: CI-CD Pipeline:
 ## 2. Explain how this pipeline would change if we wanted to deploy to Kubernetes after building:
 - After building and pushing the Docker image in Jenkins, we can add an additional stage such as:
 - Deployment Stage:
@@ -64,4 +64,34 @@ sh 'kubectl apply -f k8s-deployment.yaml'
 ```
 
 
+# Part-5: Monitoring and Logs: 
+## 1. Explain the difference between metrics, logs, and traces:
+- Metrics: Metrics is a numerical measurement collected over time for monitoring performance and setting alerts. Ex,CPU Usage, Network Latency.
+- Logs: Logs contains the detailed timestamped records of events produced by applications or systems used for troubleshooting and audits.
+- Traces: Traces helps us to understand request flow and identify bottlenecks in complex systems. It provides end-to-end tracking of a single request across multiple services.
+
+## 2.If your Kubernetes pod crashes, how would you debug the issue:
+1. Check Pod Status: 
+``` 
+kubectl get pods
+```
+Quickly shows if the pod is in CrashLoopBackOff, Error, or Pending state to identify the nature of the failure.
+   
+2. Getting pod events:
+```
+kubectl describe pod <pod-name>
+```
+Provides detailed information on events.
+
+3. Checking Logs:
+```
+kubectl logs <pod-name>
+```
+Shows application-level errors.
+
+4. Execute inside pods:
+```
+kubectl exec -it <pod-name> -- /bin/sh
+```
+Allows to access pods using interactice shell.
 
